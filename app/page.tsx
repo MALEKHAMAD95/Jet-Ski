@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
 import { SpecsSection } from '@/components/SpecsSection';
 import { Features } from '@/components/Features';
 import { PricingSection } from '@/components/PricingSection';
