@@ -37,7 +37,7 @@ export function HeroBackground() {
           autoPlay
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           onEnded={() => setVideoEnded(true)}
           onLoadedData={() => setVideoLoaded(true)}
           onError={() => setVideoEnded(true)}
