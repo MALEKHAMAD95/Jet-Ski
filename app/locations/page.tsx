@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { MapPin, Phone, Check } from 'lucide-react';
 import { LocationsSection } from '@/components/LocationsSection';
 import { CTASection } from '@/components/CTASection';
+import { LocationsMap } from '@/components/LocationsMap';
 import { siteConfig } from '../lib/config';
 
 export const metadata: Metadata = {
@@ -68,6 +69,24 @@ export default function LocationsPage() {
       </section>
 
       <LocationsSection />
+
+      {/* Custom black & gold map */}
+      <section className="section-padding bg-brand-black">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-3">
+              Find Us
+            </p>
+            <h2 className="heading-lg text-white mb-4">
+              Our <span className="text-gradient-gold">Launch Points</span>
+            </h2>
+            <p className="text-white/70 max-w-xl mx-auto">
+              Click any marker to see details and book at that location.
+            </p>
+          </div>
+          <LocationsMap />
+        </div>
+      </section>
 
       <section className="section-padding bg-brand-black">
         <div className="container-custom">
