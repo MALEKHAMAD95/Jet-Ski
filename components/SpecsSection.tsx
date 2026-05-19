@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import { CountUp } from './CountUp';
 
 const specs = [
-  { label: 'Kmh Speed', value: 210, suffix: '', color: 'text-cyan-400' },
+  { label: 'High Speed', value: null, text: 'High Speed Experience', color: 'text-cyan-400' },
   { label: 'Safety', value: 100, suffix: '%', color: 'text-white' },
   { label: 'Smooth Ride', value: null, text: 'Smooth Ride', color: 'text-white' },
   { label: 'Well Customized', value: null, text: 'Well Customized', color: 'text-white' },

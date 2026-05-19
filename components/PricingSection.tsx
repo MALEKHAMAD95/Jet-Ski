@@ -164,7 +164,22 @@ export function PricingSection() {
           ))}
         </motion.div>
 
-        <div className="mt-12 text-center text-white/60 text-sm flex items-center justify-center gap-2">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="mt-12 max-w-3xl mx-auto bg-black/40 backdrop-blur-sm border border-brand-gold/30 rounded-2xl p-6 text-center"
+        >
+          <p className="text-brand-gold font-semibold uppercase tracking-widest text-xs mb-2">
+            Daily Rentals
+          </p>
+          <p className="text-white/80 leading-relaxed">
+            Daily rentals are also available for cottages, weekend getaways, vacations, and special occasions. Enjoy the freedom of having your jet ski for the entire day.
+          </p>
+        </motion.div>
+
+        <div className="mt-8 text-center text-white/60 text-sm flex items-center justify-center gap-2">
           <CreditCard className="w-4 h-4" />
           Valid ID & {formatCAD(siteConfig.pricing.deposit)} CAD refundable deposit required at pickup
         </div>
