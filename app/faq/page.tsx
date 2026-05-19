@@ -4,7 +4,7 @@ import { FAQHero } from '@/components/FAQHero';
 import { FAQList } from '@/components/FAQList';
 
 export const metadata: Metadata = {
-  title: 'FAQ — Jet Ski Rental Toronto Questions Answered | GTA Jet Ski',
+  title: 'FAQ — Jet Ski Rental Toronto Questions Answered | Spark Jet Ski',
   description:
     'Common questions about renting a jet ski in Toronto. License requirements, age limits, deposit info, cancellation policy, and more.',
   alternates: { canonical: '/faq' },

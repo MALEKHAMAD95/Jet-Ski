@@ -6,9 +6,9 @@ import { formatCAD } from '../lib/format';
 import { siteConfig } from '../lib/config';
 
 export const metadata: Metadata = {
-  title: 'About GTA Jet Ski Rentals | Toronto&apos;s Premium Jet Ski Service',
+  title: 'About Spark Jet Ski Rentals | Toronto&apos;s Premium Jet Ski Service',
   description:
-    'Learn about GTA Jet Ski — Toronto&apos;s premium Sea-Doo rental service. Our story, our fleet, our commitment to safety and unforgettable experiences.',
+    'Learn about Spark Jet Ski — Toronto&apos;s premium Sea-Doo rental service. Our story, our fleet, our commitment to safety and unforgettable experiences.',
   alternates: { canonical: '/about' },
 };
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/25_jet_ski_sblp_header_2100x1045_f_domestic.jpg"
-            alt="GTA Jet Ski Toronto rental"
+            alt="Spark Jet Ski Toronto rental"
             fill
             priority
             sizes="100vw"
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 Born from a Love of <span className="text-gradient-gold">The Water</span>
               </h2>
               <p className="text-white/80 leading-relaxed mb-4 text-lg">
-                GTA Jet Ski Rentals started with a simple idea: make the joy of jet skiing accessible to everyone in Greater Toronto. No complicated licenses, no hidden fees, no hassle.
+                Spark Jet Ski Rentals started with a simple idea: make the joy of jet skiing accessible to everyone in Greater Toronto. No complicated licenses, no hidden fees, no hassle.
               </p>
               <p className="text-white/80 leading-relaxed mb-4 text-lg">
                 Today we operate from three prime GTA locations — Toronto, Mississauga, and Scarborough — offering a fleet of premium Sea-Doo jet skis to thousands of riders each season.
@@ -83,7 +83,7 @@ export default function AboutPage() {
             <div className="relative aspect-square rounded-3xl overflow-hidden">
               <Image
                 src="/images/IMGL0900.jpg"
-                alt="GTA Jet Ski rental experience"
+                alt="Spark Jet Ski rental experience"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

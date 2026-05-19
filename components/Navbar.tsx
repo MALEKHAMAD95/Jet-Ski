@@ -37,10 +37,10 @@ export function Navbar() {
         className="container-custom flex items-center justify-between py-4"
         aria-label="Main navigation"
       >
-        <Link href="/" className="flex items-center group" aria-label="GTA Jet Ski Rentals - Home">
+        <Link href="/" className="flex items-center group" aria-label="Spark Jet Ski Rentals - Home">
           <Image
             src="/images/logo.png"
-            alt="GTA Jet Ski Rentals"
+            alt="Spark Jet Ski Rentals"
             width={200}
             height={92}
             priority

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const images = [
   {
     src: '/images/IMGL0900.jpg',
-    alt: 'Woman riding Yamaha jet ski on Lake Ontario - GTA Jet Ski Toronto',
+    alt: 'Woman riding Yamaha jet ski on Lake Ontario - Spark Jet Ski Toronto',
     span: 'md:col-span-2 md:row-span-2',
   },
   {
@@ -26,12 +26,12 @@ const images = [
   },
   {
     src: '/images/jetski_sblp_panel1_2.jpg',
-    alt: 'Premium jet skis fleet - GTA Jet Ski Rentals',
+    alt: 'Premium jet skis fleet - Spark Jet Ski Rentals',
     span: '',
   },
   {
     src: '/images/logo with description.png',
-    alt: 'GTA Jet Ski Rentals - Official Logo Toronto',
+    alt: 'Spark Jet Ski Rentals - Official Logo Toronto',
     span: '',
   },
 ];
@@ -54,7 +54,7 @@ export function Gallery() {
             Real Riders, <span className="text-gradient-gold">Real Thrills</span>
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            See the GTA Jet Ski experience — premium Sea-Doo rides on Lake Ontario.
+            See the Spark Jet Ski experience — premium Sea-Doo rides on Lake Ontario.
           </p>
         </motion.div>
 

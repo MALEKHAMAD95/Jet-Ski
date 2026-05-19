@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: 'GTA Jet Ski Rentals',
-  legalName: 'GTA Jet Ski Rentals',
+  name: 'Spark Jet Ski Rentals',
+  legalName: 'Spark Jet Ski Rentals',
   url: 'https://gtajetski.ca',
   description:
     'Premium Jet Ski rentals in Toronto, Mississauga & Scarborough. $130/hr | No license needed | Sea-Doo Jet Skis | Same-day booking available.',
@@ -18,7 +18,7 @@ export const siteConfig = {
     'jet ski Humber Bay',
     'jet ski Lake Ontario',
     'rent jet ski Toronto cheap',
-    'GTA Jet Ski',
+    'Spark Jet Ski',
   ],
   phone: '+1-416-420-8228',
   phoneSecondary: '+1-416-877-5017',

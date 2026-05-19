@@ -27,10 +27,10 @@ export function Footer() {
       <div className="container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
-            <Link href="/" className="inline-block mb-4" aria-label="GTA Jet Ski home">
+            <Link href="/" className="inline-block mb-4" aria-label="Spark Jet Ski home">
               <Image
                 src="/images/logo.png"
-                alt="GTA Jet Ski Rentals"
+                alt="Spark Jet Ski Rentals"
                 width={220}
                 height={101}
                 className="h-16 w-auto"

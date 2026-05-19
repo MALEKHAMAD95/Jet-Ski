@@ -18,7 +18,7 @@ import { siteConfig } from '../lib/config';
 import { formatCAD } from '../lib/format';
 
 export const metadata: Metadata = {
-  title: 'Jet Ski Rental Prices Toronto | CA$130/hr - GTA Jet Ski',
+  title: 'Jet Ski Rental Prices Toronto | CA$130/hr - Spark Jet Ski',
   description:
     'Transparent jet ski rental pricing in Toronto. CA$130/hour or CA$75 for 30 minutes. CA$500 refundable deposit. No hidden fees, no license needed.',
   alternates: { canonical: '/pricing' },

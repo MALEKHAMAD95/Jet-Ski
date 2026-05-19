@@ -85,7 +85,7 @@ export function Loader() {
             >
               <Image
                 src="/images/logo.png"
-                alt="GTA Jet Ski"
+                alt="Spark Jet Ski"
                 fill
                 priority
                 sizes="96px"
@@ -99,7 +99,7 @@ export function Loader() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              GTA Jet Ski
+              Spark Jet Ski
             </motion.p>
 
             <motion.div

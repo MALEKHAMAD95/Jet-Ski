@@ -112,7 +112,7 @@ export function LocationsMap() {
 
         const popupContent = `
           <div style="padding:16px 20px;min-width:180px;">
-            <p style="color:#F5C518;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin:0 0 4px;">GTA Jet Ski</p>
+            <p style="color:#F5C518;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin:0 0 4px;">Spark Jet Ski</p>
             <p style="color:#fff;font-size:16px;font-weight:900;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.05em;">${loc.name}</p>
             <p style="color:rgba(255,255,255,0.6);font-size:12px;margin:0 0 12px;">${loc.area}</p>
             <a href="tel:+14164208228" style="

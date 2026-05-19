@@ -33,8 +33,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Jet Ski Rentals Toronto | GTA Jet Ski — $130/hr | No License Needed',
-    template: '%s | GTA Jet Ski Rentals',
+    default: 'Jet Ski Rentals Toronto | Spark Jet Ski — $130/hr | No License Needed',
+    template: '%s | Spark Jet Ski Rentals',
   },
   description: siteConfig.description,
   keywords: [...siteConfig.keywords],
@@ -51,20 +51,20 @@ export const metadata: Metadata = {
     locale: 'en_CA',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Jet Ski Rentals Toronto | GTA Jet Ski — $130/hr',
+    title: 'Jet Ski Rentals Toronto | Spark Jet Ski — $130/hr',
     description: siteConfig.description,
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: 'GTA Jet Ski Rentals - Toronto, Mississauga, Scarborough',
+        alt: 'Spark Jet Ski Rentals - Toronto, Mississauga, Scarborough',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jet Ski Rentals Toronto | GTA Jet Ski — $130/hr',
+    title: 'Jet Ski Rentals Toronto | Spark Jet Ski — $130/hr',
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

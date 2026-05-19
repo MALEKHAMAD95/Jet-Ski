@@ -22,7 +22,7 @@ export function Hero() {
         >
           <Image
             src="/images/logo with description.png"
-            alt="GTA Jet Ski Rentals Toronto"
+            alt="Spark Jet Ski Rentals Toronto"
             width={320}
             height={400}
             priority

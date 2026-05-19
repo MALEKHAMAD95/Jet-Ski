@@ -8,7 +8,7 @@ import { siteConfig } from '../lib/config';
 export const metadata: Metadata = {
   title: 'Jet Ski Rental Locations | Toronto, Mississauga, Scarborough',
   description:
-    'GTA Jet Ski operates from 3 prime locations: Toronto (Humber Bay area), Mississauga (Port Credit), and Scarborough (Bluffers Park). Pick your closest spot.',
+    'Spark Jet Ski operates from 3 prime locations: Toronto (Humber Bay area), Mississauga (Port Credit), and Scarborough (Bluffers Park). Pick your closest spot.',
   alternates: { canonical: '/locations' },
 };
 

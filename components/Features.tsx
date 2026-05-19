@@ -65,7 +65,7 @@ export function Features() {
             Why Choose Us
           </p>
           <h2 className="heading-lg text-white mb-4">
-            Why <span className="text-gradient-gold">GTA Jet Ski</span>
+            Why <span className="text-gradient-gold">Spark Jet Ski</span>
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Toronto&apos;s top-rated jet ski rental service with everything you need for an unforgettable day on Lake Ontario.

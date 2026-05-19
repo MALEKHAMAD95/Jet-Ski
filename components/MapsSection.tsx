@@ -46,7 +46,7 @@ export function MapsSection() {
           >
             <iframe
               src={embedSrc}
-              title="GTA Jet Ski Toronto Location Map"
+              title="Spark Jet Ski Toronto Location Map"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full min-h-[400px] grayscale-[40%] group-hover:grayscale-0 transition-all duration-700"

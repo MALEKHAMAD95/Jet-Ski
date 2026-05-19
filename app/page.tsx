@@ -11,12 +11,12 @@ import { CTASection } from '@/components/CTASection';
 import { siteConfig } from './lib/config';
 
 export const metadata: Metadata = {
-  title: 'Jet Ski Rentals Toronto | GTA Jet Ski — $130/hr | No License Needed',
+  title: 'Jet Ski Rentals Toronto | Spark Jet Ski — $130/hr | No License Needed',
   description:
     'Toronto’s top jet ski rentals. Sea-Doo Jet Ski in Toronto, Mississauga & Scarborough. $130/hr | No license needed | Same-day booking. Call (416) 420-8228.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Jet Ski Rentals Toronto | GTA Jet Ski — $130/hr',
+    title: 'Jet Ski Rentals Toronto | Spark Jet Ski — $130/hr',
     description: 'Sea-Doo jet ski rentals across the GTA. Book today!',
     url: siteConfig.url,
     images: ['/images/IMGL0900.jpg'],
