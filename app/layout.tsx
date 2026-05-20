@@ -8,6 +8,7 @@ import { PageTransition } from '@/components/PageTransition';
 import { SmoothScroll } from '@/components/SmoothScroll';
 import { CustomCursor } from '@/components/CustomCursor';
 import { Loader } from '@/components/Loader';
+import { ScrollProgress } from '@/components/ScrollProgress';
 import './globals.css';
 
 const inter = Inter({
@@ -210,6 +211,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[#F0F9FF] text-sky-900 cursor-none">
         <Loader />
+        <ScrollProgress />
         <SmoothScroll />
         <CustomCursor />
         <Navbar />

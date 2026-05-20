@@ -10,6 +10,7 @@ import {
   CalendarCheck,
   type LucideIcon,
 } from 'lucide-react';
+import { FloatingBubbles } from './FloatingBubbles';
 
 interface Feature {
   Icon: LucideIcon;
@@ -52,8 +53,9 @@ const features: Feature[] = [
 
 export function Features() {
   return (
-    <section className="section-padding bg-white">
-      <div className="container-custom">
+    <section className="relative section-padding bg-white overflow-hidden">
+      <FloatingBubbles count={10} />
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

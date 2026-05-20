@@ -128,11 +128,54 @@ export function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center text-white/70"
+        className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center text-white/80"
       >
         <span className="text-xs uppercase tracking-widest mb-2">Scroll</span>
         <ChevronDown className="w-6 h-6" />
       </motion.div>
+
+      <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 z-[5] pointer-events-none">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="w-full h-[80px] sm:h-[120px]">
+          <motion.path
+            initial={{ d: 'M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z' }}
+            animate={{
+              d: [
+                'M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z',
+                'M0,40 C240,80 480,40 720,80 C960,40 1200,80 1440,40 L1440,120 L0,120 Z',
+                'M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z',
+              ],
+            }}
+            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+            fill="#F0F9FF"
+            opacity="0.35"
+          />
+          <motion.path
+            initial={{ d: 'M0,80 C240,120 480,40 720,80 C960,120 1200,40 1440,80 L1440,120 L0,120 Z' }}
+            animate={{
+              d: [
+                'M0,80 C240,120 480,40 720,80 C960,120 1200,40 1440,80 L1440,120 L0,120 Z',
+                'M0,70 C240,110 480,50 720,90 C960,50 1200,90 1440,70 L1440,120 L0,120 Z',
+                'M0,80 C240,120 480,40 720,80 C960,120 1200,40 1440,80 L1440,120 L0,120 Z',
+              ],
+            }}
+            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+            fill="#F0F9FF"
+            opacity="0.65"
+          />
+          <motion.path
+            initial={{ d: 'M0,100 C240,120 480,80 720,100 C960,120 1200,80 1440,100 L1440,120 L0,120 Z' }}
+            animate={{
+              d: [
+                'M0,100 C240,120 480,80 720,100 C960,120 1200,80 1440,100 L1440,120 L0,120 Z',
+                'M0,90 C240,110 480,90 720,110 C960,90 1200,110 1440,90 L1440,120 L0,120 Z',
+                'M0,100 C240,120 480,80 720,100 C960,120 1200,80 1440,100 L1440,120 L0,120 Z',
+              ],
+            }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            fill="#F0F9FF"
+          />
+        </svg>
+      </div>
     </section>
   );
 }

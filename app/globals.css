@@ -19,8 +19,10 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
-  cursor: none !important;
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
 }
 
 body {

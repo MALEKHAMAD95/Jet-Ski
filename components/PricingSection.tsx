@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Check, Star, CreditCard } from 'lucide-react';
 import { siteConfig } from '@/app/lib/config';
 import { formatCAD } from '@/app/lib/format';
+import { FloatingBubbles } from './FloatingBubbles';
 
 const plans = [
   {
@@ -52,6 +53,7 @@ const plans = [
 export function PricingSection() {
   return (
     <section id="pricing" className="section-padding bg-[#F0FAFF] relative overflow-hidden">
+      <FloatingBubbles count={14} />
       <div className="absolute inset-0 opacity-20">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}

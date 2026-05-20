@@ -59,7 +59,7 @@ export function CustomCursor() {
     <>
       {/* Dot — fast, precise */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 pointer-events-none z-[9999]"
         style={{
           x: dotX,
           y: dotY,
@@ -69,16 +69,15 @@ export function CustomCursor() {
         }}
       >
         <motion.div
-          className="rounded-full bg-brand-gold"
+          className="rounded-full bg-gradient-to-br from-cyan-400 to-sky-600 shadow-lg shadow-sky-500/50"
           animate={{
-            width: clicking ? 6 : hovering ? 8 : 8,
-            height: clicking ? 6 : hovering ? 8 : 8,
+            width: clicking ? 6 : hovering ? 10 : 8,
+            height: clicking ? 6 : hovering ? 10 : 8,
           }}
           transition={{ duration: 0.15 }}
         />
       </motion.div>
 
-      {/* Ring — lagging, elegant */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9998]"
         style={{
@@ -90,11 +89,11 @@ export function CustomCursor() {
         }}
       >
         <motion.div
-          className="rounded-full border border-brand-gold/70"
+          className="rounded-full border-2"
           animate={{
-            width: clicking ? 28 : hovering ? 44 : 36,
-            height: clicking ? 28 : hovering ? 44 : 36,
-            borderColor: hovering ? 'rgba(245,197,24,1)' : 'rgba(245,197,24,0.7)',
+            width: clicking ? 28 : hovering ? 48 : 36,
+            height: clicking ? 28 : hovering ? 48 : 36,
+            borderColor: hovering ? 'rgba(14,165,233,0.95)' : 'rgba(14,165,233,0.6)',
             scale: clicking ? 0.85 : 1,
           }}
           transition={{ duration: 0.25, ease: 'easeOut' }}

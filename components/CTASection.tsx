@@ -4,11 +4,13 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Rocket, Phone, MessageCircle } from 'lucide-react';
 import { siteConfig } from '@/app/lib/config';
+import { FloatingBubbles } from './FloatingBubbles';
 
 export function CTASection() {
   return (
     <section className="relative section-padding overflow-hidden">
       <div className="absolute inset-0 bg-gradient-summer" />
+      <FloatingBubbles count={18} />
       <motion.div
         animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.3, 0.15] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
