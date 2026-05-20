@@ -24,7 +24,7 @@ export function SpecsSection() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-900/85 via-cyan-800/70 to-sky-700/40" />
       </div>
 
       <div className="container-custom relative z-10">

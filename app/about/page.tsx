@@ -43,7 +43,7 @@ export default function AboutPage() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-sky-900/40 via-cyan-800/40 to-sky-900/60" />
         </div>
 
         <div className="container-custom text-center relative z-10">
