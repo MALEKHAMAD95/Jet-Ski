@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Bebas_Neue } from 'next/font/google';
+import { Outfit, Anton } from 'next/font/google';
 import { siteConfig } from './lib/config';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -11,13 +11,14 @@ import { Loader } from '@/components/Loader';
 import { ScrollProgress } from '@/components/ScrollProgress';
 import './globals.css';
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
 
-const bebas = Bebas_Neue({
+const anton = Anton({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
@@ -198,7 +199,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${bebas.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${anton.variable}`}>
       <head>
         <script
           type="application/ld+json"

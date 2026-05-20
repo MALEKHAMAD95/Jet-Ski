@@ -54,15 +54,18 @@ body {
   }
 
   .heading-xl {
-    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-tight tracking-tight;
+    font-family: var(--font-bebas), Impact, sans-serif;
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[1.05] tracking-wide;
   }
 
   .heading-lg {
-    @apply text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tight;
+    font-family: var(--font-bebas), Impact, sans-serif;
+    @apply text-4xl sm:text-5xl md:text-6xl uppercase leading-[1.05] tracking-wide;
   }
 
   .heading-md {
-    @apply text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-tight;
+    font-family: var(--font-bebas), Impact, sans-serif;
+    @apply text-3xl sm:text-4xl md:text-5xl uppercase leading-[1.1] tracking-wide;
   }
 }
 
