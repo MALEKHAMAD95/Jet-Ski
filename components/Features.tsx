@@ -52,7 +52,7 @@ const features: Feature[] = [
 
 export function Features() {
   return (
-    <section className="section-padding bg-gradient-dark">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -64,10 +64,10 @@ export function Features() {
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             Why Choose Us
           </p>
-          <h2 className="heading-lg text-white mb-4">
+          <h2 className="heading-lg text-sky-900 mb-4">
             Why <span className="text-gradient-gold">Spark Jet Ski</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-sky-600 text-lg max-w-2xl mx-auto">
             Toronto&apos;s top-rated jet ski rental service with everything you need for an unforgettable day on Lake Ontario.
           </p>
         </motion.div>
@@ -91,19 +91,19 @@ export function Features() {
               }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="group bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-brand-gold/60 hover:bg-black/60 transition-colors duration-300"
+              className="group bg-white border border-sky-100 shadow-md rounded-2xl p-8 hover:border-brand-gold/40 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300"
             >
               <motion.div
                 whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="w-16 h-16 rounded-2xl bg-gradient-gold flex items-center justify-center mb-5"
+                className="w-16 h-16 rounded-2xl bg-gradient-gold flex items-center justify-center mb-5 shadow-lg shadow-brand-gold/30"
               >
-                <Icon className="w-8 h-8 text-black" strokeWidth={2.2} />
+                <Icon className="w-8 h-8 text-white" strokeWidth={2.2} />
               </motion.div>
-              <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-3">
+              <h3 className="text-xl font-bold uppercase tracking-wide text-sky-900 mb-3">
                 {title}
               </h3>
-              <p className="text-white/70 leading-relaxed">{desc}</p>
+              <p className="text-sky-600 leading-relaxed">{desc}</p>
             </motion.div>
           ))}
         </motion.div>

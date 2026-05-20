@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-brand-gold/20 border border-brand-gold/40 rounded-full text-brand-gold text-xs sm:text-sm font-semibold uppercase tracking-widest backdrop-blur-sm"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-white/20 border border-white/40 rounded-full text-white text-xs sm:text-sm font-semibold uppercase tracking-widest backdrop-blur-sm"
         >
           <Waves className="w-4 h-4" /> Toronto&apos;s Premium Jet Ski Rentals
         </motion.p>
@@ -116,7 +116,7 @@ export function Hero() {
               }}
               whileHover={{ y: -5, scale: 1.05 }}
               transition={{ duration: 0.5 }}
-              className="bg-black/50 backdrop-blur-md border border-brand-gold/30 rounded-2xl px-3 sm:px-6 py-4 hover:border-brand-gold transition-colors"
+              className="bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl px-3 sm:px-6 py-4 hover:border-white/60 hover:bg-white/20 transition-all"
             >
               <p className="text-2xl sm:text-4xl font-black text-gradient-gold mb-1">{stat.val}</p>
               <p className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider">{stat.lbl}</p>

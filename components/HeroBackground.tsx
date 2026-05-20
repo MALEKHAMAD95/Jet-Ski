@@ -61,7 +61,7 @@ export function HeroBackground() {
         }`}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sky-900/40 via-cyan-800/30 to-sky-900/60" />
     </div>
   );
 }

@@ -9,13 +9,18 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          black: '#0A0A0A',
-          gold: '#F5C518',
-          'gold-light': '#FFD700',
-          'gold-dark': '#C9A227',
-          blue: '#1A2980',
-          'blue-light': '#2C5BA8',
-          ocean: '#0A4D8C',
+          black: '#F0F9FF',
+          gold: '#0EA5E9',
+          'gold-light': '#38BDF8',
+          'gold-dark': '#0284C7',
+          blue: '#06B6D4',
+          'blue-light': '#67E8F9',
+          ocean: '#0891B2',
+          yellow: '#FBBF24',
+          pink: '#F472B6',
+          sky: '#E0F7FA',
+          sand: '#FEF3C7',
+          mint: '#A7F3D0',
         },
       },
       fontFamily: {
@@ -23,9 +28,14 @@ const config: Config = {
         display: ['var(--font-bebas)', 'Impact', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-gold': 'linear-gradient(135deg, #F5C518 0%, #FFD700 50%, #C9A227 100%)',
-        'gradient-ocean': 'linear-gradient(135deg, #0A4D8C 0%, #1A2980 100%)',
-        'gradient-dark': 'linear-gradient(180deg, #0A0A0A 0%, #1a1a1a 100%)',
+        'gradient-gold': 'linear-gradient(135deg, #0EA5E9 0%, #38BDF8 50%, #0284C7 100%)',
+        'gradient-ocean': 'linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)',
+        'gradient-dark': 'linear-gradient(180deg, #F0F9FF 0%, #E0F7FA 100%)',
+        'gradient-summer': 'linear-gradient(135deg, #67E8F9 0%, #38BDF8 50%, #0284C7 100%)',
+        'gradient-sky': 'linear-gradient(135deg, #E0F7FA 0%, #B3E5FC 100%)',
+        'gradient-warm': 'linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%)',
+        'gradient-beach': 'linear-gradient(135deg, #E0F7FA 0%, #FFFBEB 100%)',
+        'gradient-wave': 'linear-gradient(180deg, #F0FDFF 0%, #E0F7FA 50%, #B3E5FC 100%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in',

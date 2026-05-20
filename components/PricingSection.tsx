@@ -51,8 +51,8 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="section-padding bg-brand-black relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section id="pricing" className="section-padding bg-[#F0FAFF] relative overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
@@ -76,10 +76,10 @@ export function PricingSection() {
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             Transparent Pricing
           </p>
-          <h2 className="heading-lg text-white mb-4">
+          <h2 className="heading-lg text-sky-900 mb-4">
             Simple <span className="text-gradient-gold">Pricing</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-sky-600 text-lg max-w-2xl mx-auto">
             No hidden fees. Pay only for the time you ride. Refundable deposit of {formatCAD(siteConfig.pricing.deposit)} required.
           </p>
         </motion.div>
@@ -105,37 +105,37 @@ export function PricingSection() {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className={`relative rounded-3xl p-8 transition-shadow duration-300 ${
                 plan.popular
-                  ? 'bg-gradient-gold text-black shadow-2xl shadow-brand-gold/30'
-                  : 'bg-black/60 backdrop-blur-sm border border-white/10 text-white hover:border-brand-gold/40'
+                  ? 'bg-gradient-gold text-white shadow-2xl shadow-brand-gold/40'
+                  : 'bg-white border border-sky-100 shadow-md hover:border-brand-gold/40 hover:shadow-xl hover:shadow-brand-gold/10'
               }`}
             >
               {plan.popular && (
                 <motion.span
                   animate={{ y: [0, -4, 0] }}
                   transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute -top-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 px-4 py-1 bg-brand-black text-brand-gold text-xs font-bold uppercase rounded-full border border-brand-gold"
+                  className="absolute -top-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 px-4 py-1 bg-white text-brand-gold text-xs font-bold uppercase rounded-full border border-brand-gold shadow-md"
                 >
                   <Star className="w-3 h-3 fill-current" /> Most Popular
                 </motion.span>
               )}
 
-              <h3 className={`text-2xl font-black uppercase mb-2 ${plan.popular ? 'text-black' : 'text-white'}`}>
+              <h3 className={`text-2xl font-black uppercase mb-2 ${plan.popular ? 'text-white' : 'text-sky-900'}`}>
                 {plan.name}
               </h3>
-              <p className={`text-sm uppercase tracking-wider mb-6 ${plan.popular ? 'text-black/70' : 'text-white/60'}`}>
+              <p className={`text-sm uppercase tracking-wider mb-6 ${plan.popular ? 'text-white/70' : 'text-sky-500'}`}>
                 {plan.duration}
               </p>
 
               <div className="mb-6 flex items-baseline gap-2">
                 {typeof plan.price === 'number' ? (
                   <>
-                    <span className={`text-5xl lg:text-6xl font-black ${plan.popular ? 'text-black' : 'text-gradient-gold'}`}>
+                    <span className={`text-5xl lg:text-6xl font-black ${plan.popular ? 'text-white' : 'text-gradient-gold'}`}>
                       {formatCAD(plan.price)}
                     </span>
-                    <span className={`text-base font-semibold ${plan.popular ? 'text-black/70' : 'text-white/60'}`}>CAD</span>
+                    <span className={`text-base font-semibold ${plan.popular ? 'text-white/70' : 'text-sky-500'}`}>CAD</span>
                   </>
                 ) : (
-                  <span className={`text-4xl lg:text-5xl font-black ${plan.popular ? 'text-black' : 'text-gradient-gold'}`}>
+                  <span className={`text-4xl lg:text-5xl font-black ${plan.popular ? 'text-white' : 'text-gradient-gold'}`}>
                     {plan.price}
                   </span>
                 )}
@@ -143,8 +143,8 @@ export function PricingSection() {
 
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feat) => (
-                  <li key={feat} className={`flex items-start gap-2 text-sm ${plan.popular ? 'text-black/90' : 'text-white/80'}`}>
-                    <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-black' : 'text-brand-gold'}`} strokeWidth={3} />
+                  <li key={feat} className={`flex items-start gap-2 text-sm ${plan.popular ? 'text-white/90' : 'text-sky-700'}`}>
+                    <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-white' : 'text-brand-gold'}`} strokeWidth={3} />
                     {feat}
                   </li>
                 ))}
@@ -154,8 +154,8 @@ export function PricingSection() {
                 href="/contact"
                 className={`block w-full text-center px-6 py-3 rounded-full font-bold uppercase tracking-wider transition-transform hover:scale-105 ${
                   plan.popular
-                    ? 'bg-black text-brand-gold hover:bg-gray-900'
-                    : 'bg-gradient-gold text-black'
+                    ? 'bg-white text-brand-gold-dark hover:bg-sky-50 shadow-lg'
+                    : 'bg-gradient-gold text-white hover:shadow-lg hover:shadow-brand-gold/30'
                 }`}
               >
                 {plan.cta}
@@ -169,17 +169,17 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="mt-12 max-w-3xl mx-auto bg-black/40 backdrop-blur-sm border border-brand-gold/30 rounded-2xl p-6 text-center"
+          className="mt-12 max-w-3xl mx-auto bg-white border border-brand-gold/30 rounded-2xl p-6 text-center shadow-sm"
         >
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-xs mb-2">
             Daily Rentals
           </p>
-          <p className="text-white/80 leading-relaxed">
+          <p className="text-sky-700 leading-relaxed">
             Daily rentals are also available for cottages, weekend getaways, vacations, and special occasions. Enjoy the freedom of having your jet ski for the entire day.
           </p>
         </motion.div>
 
-        <div className="mt-8 text-center text-white/60 text-sm flex items-center justify-center gap-2">
+        <div className="mt-8 text-center text-sky-500 text-sm flex items-center justify-center gap-2">
           <CreditCard className="w-4 h-4" />
           Valid ID & {formatCAD(siteConfig.pricing.deposit)} CAD refundable deposit required at pickup
         </div>

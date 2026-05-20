@@ -38,7 +38,7 @@ const images = [
 
 export function Gallery() {
   return (
-    <section className="section-padding bg-gradient-dark">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -50,10 +50,10 @@ export function Gallery() {
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             Gallery
           </p>
-          <h2 className="heading-lg text-white mb-4">
+          <h2 className="heading-lg text-sky-900 mb-4">
             Real Riders, <span className="text-gradient-gold">Real Thrills</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-sky-600 text-lg max-w-2xl mx-auto">
             See the Spark Jet Ski experience — premium Sea-Doo rides on Lake Ontario.
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export function Gallery() {
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
                 loading={i < 2 ? 'eager' : 'lazy'}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           ))}
         </motion.div>

@@ -30,7 +30,9 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-gradient-to-b from-black/70 to-transparent'
+        scrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-md border-b border-sky-100'
+          : 'bg-gradient-to-b from-black/70 to-transparent'
       }`}
     >
       <nav
@@ -53,7 +55,11 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm font-semibold uppercase tracking-wide text-white/90 hover:text-brand-gold transition-colors"
+                className={`text-sm font-semibold uppercase tracking-wide transition-colors ${
+                  scrolled
+                    ? 'text-sky-700 hover:text-brand-gold'
+                    : 'text-white/90 hover:text-white'
+                }`}
               >
                 {link.label}
               </Link>
@@ -64,7 +70,9 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href={`tel:${siteConfig.phone}`}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-white hover:text-brand-gold transition-colors"
+            className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-colors ${
+              scrolled ? 'text-sky-700 hover:text-brand-gold' : 'text-white hover:text-white/80'
+            }`}
             aria-label="Call us"
           >
             <Phone className="w-4 h-4" />
@@ -72,7 +80,7 @@ export function Navbar() {
           </a>
           <Link
             href="/contact"
-            className="px-6 py-2.5 bg-gradient-gold text-black font-bold text-sm uppercase rounded-full hover:scale-105 transition-transform"
+            className="px-6 py-2.5 bg-gradient-gold text-white font-bold text-sm uppercase rounded-full hover:scale-105 transition-transform shadow-md hover:shadow-brand-gold/30"
           >
             Book Now
           </Link>
@@ -81,7 +89,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="lg:hidden text-white p-2"
+          className={`lg:hidden p-2 transition-colors ${scrolled ? 'text-sky-800' : 'text-white'}`}
           aria-label="Toggle menu"
           aria-expanded={open ? 'true' : 'false'}
         >
@@ -96,7 +104,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-black/95 backdrop-blur-md border-t border-white/10 overflow-hidden"
+            className="lg:hidden bg-white/98 backdrop-blur-md border-t border-sky-100 overflow-hidden shadow-lg"
           >
             <ul className="container-custom py-6 flex flex-col gap-4">
               {navLinks.map((link, i) => (
@@ -109,13 +117,13 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="block py-2 text-base font-semibold uppercase tracking-wide text-white hover:text-brand-gold"
+                    className="block py-2 text-base font-semibold uppercase tracking-wide text-sky-800 hover:text-brand-gold"
                   >
                     {link.label}
                   </Link>
                 </motion.li>
               ))}
-              <li className="pt-4 border-t border-white/10">
+              <li className="pt-4 border-t border-sky-100">
                 <a
                   href={`tel:${siteConfig.phone}`}
                   className="inline-flex items-center gap-2 py-2 text-base font-semibold text-brand-gold"

@@ -43,14 +43,14 @@ export default function AboutPage() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         <div className="container-custom text-center relative z-10">
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             About Us
           </p>
-          <h1 className="heading-xl text-white mb-6">
+          <h1 className="heading-xl text-white mb-6 text-shadow-lg">
             Toronto&apos;s <span className="text-gradient-gold">Jet Ski Experts</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
@@ -59,28 +59,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-dark">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
                 Our Story
               </p>
-              <h2 className="heading-lg text-white mb-6">
+              <h2 className="heading-lg text-sky-900 mb-6">
                 Born from a Love of <span className="text-gradient-gold">The Water</span>
               </h2>
-              <p className="text-white/80 leading-relaxed mb-4 text-lg">
+              <p className="text-sky-700 leading-relaxed mb-4 text-lg">
                 Spark Jet Ski Rentals started with a simple idea: make the joy of jet skiing accessible to everyone in Greater Toronto. No complicated licenses, no hidden fees, no hassle.
               </p>
-              <p className="text-white/80 leading-relaxed mb-4 text-lg">
+              <p className="text-sky-700 leading-relaxed mb-4 text-lg">
                 Today we operate from three prime GTA locations — Toronto, Mississauga, and Scarborough — offering a fleet of premium Sea-Doo jet skis to thousands of riders each season.
               </p>
-              <p className="text-white/80 leading-relaxed text-lg">
+              <p className="text-sky-700 leading-relaxed text-lg">
                 Whether you&apos;re a first-time rider, a thrill seeker, or planning the perfect group outing, our team makes sure your time on the water is safe, smooth, and unforgettable.
               </p>
             </div>
 
-            <div className="relative aspect-square rounded-3xl overflow-hidden">
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/IMGL0900.jpg"
                 alt="Spark Jet Ski rental experience"
@@ -93,49 +93,49 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-[#F0FAFF]">
         <div className="container-custom">
           <div className="text-center mb-16">
             <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
               Our Values
             </p>
-            <h2 className="heading-lg text-white mb-4">
+            <h2 className="heading-lg text-sky-900 mb-4">
               What We <span className="text-gradient-gold">Stand For</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map(({ Icon, title, desc }) => (
-              <div key={title} className="bg-black/60 border border-white/10 rounded-3xl p-8 text-center hover:border-brand-gold/60 transition-all">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-gold flex items-center justify-center">
-                  <Icon className="w-8 h-8 text-black" strokeWidth={2.2} />
+              <div key={title} className="bg-white border border-sky-100 shadow-md rounded-3xl p-8 text-center hover:border-brand-gold/40 hover:shadow-xl hover:shadow-brand-gold/10 transition-all">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-gold flex items-center justify-center shadow-lg shadow-brand-gold/30">
+                  <Icon className="w-8 h-8 text-white" strokeWidth={2.2} />
                 </div>
-                <h3 className="text-xl font-bold uppercase text-white mb-3">{title}</h3>
-                <p className="text-white/70 leading-relaxed">{desc}</p>
+                <h3 className="text-xl font-bold uppercase text-sky-900 mb-3">{title}</h3>
+                <p className="text-sky-600 leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-ocean">
+      <section className="section-padding bg-gradient-summer">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-5xl lg:text-6xl font-black text-gradient-gold mb-2">3</p>
-              <p className="text-white uppercase text-sm tracking-wider">GTA Locations</p>
+              <p className="text-5xl lg:text-6xl font-black text-white mb-2 text-shadow-lg">3</p>
+              <p className="text-white/90 uppercase text-sm tracking-wider">GTA Locations</p>
             </div>
             <div>
-              <p className="text-5xl lg:text-6xl font-black text-gradient-gold mb-2">100%</p>
-              <p className="text-white uppercase text-sm tracking-wider">Safety Approved</p>
+              <p className="text-5xl lg:text-6xl font-black text-white mb-2 text-shadow-lg">100%</p>
+              <p className="text-white/90 uppercase text-sm tracking-wider">Safety Approved</p>
             </div>
             <div>
-              <p className="text-5xl lg:text-6xl font-black text-gradient-gold mb-2">{formatCAD(siteConfig.pricing.hourly)}</p>
-              <p className="text-white uppercase text-sm tracking-wider">Per Hour</p>
+              <p className="text-5xl lg:text-6xl font-black text-white mb-2 text-shadow-lg">{formatCAD(siteConfig.pricing.hourly)}</p>
+              <p className="text-white/90 uppercase text-sm tracking-wider">Per Hour</p>
             </div>
             <div>
-              <p className="text-5xl lg:text-6xl font-black text-gradient-gold mb-2">0</p>
-              <p className="text-white uppercase text-sm tracking-wider">License Required</p>
+              <p className="text-5xl lg:text-6xl font-black text-white mb-2 text-shadow-lg">0</p>
+              <p className="text-white/90 uppercase text-sm tracking-wider">License Required</p>
             </div>
           </div>
         </div>

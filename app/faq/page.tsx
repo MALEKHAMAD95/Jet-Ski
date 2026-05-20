@@ -81,7 +81,7 @@ export default function FAQPage() {
 
       <FAQHero />
 
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl">
           <FAQList faqs={faqs} />
         </div>

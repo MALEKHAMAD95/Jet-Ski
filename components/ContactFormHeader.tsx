@@ -11,10 +11,10 @@ export function ContactFormHeader() {
       transition={{ duration: 0.6 }}
       className="text-center mb-10"
     >
-      <h2 className="heading-md text-white mb-3">
+      <h2 className="heading-md text-sky-900 mb-3">
         Or Send Us a <span className="text-gradient-gold">Message</span>
       </h2>
-      <p className="text-white/70">
+      <p className="text-sky-600">
         Fill out the form below — we&apos;ll get back to you within 24 hours.
       </p>
     </motion.div>

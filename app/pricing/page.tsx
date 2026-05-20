@@ -46,7 +46,7 @@ const terms = [
   {
     Icon: IdCard,
     bold: 'Valid government ID',
-    rest: 'mandatory — driver’s license or passport.',
+    rest: "mandatory — driver's license or passport.",
   },
   {
     Icon: ShieldCheck,
@@ -68,13 +68,13 @@ const terms = [
 export default function PricingPage() {
   return (
     <>
-      <section className="relative pt-32 pb-12 bg-gradient-ocean overflow-hidden">
+      <section className="relative pt-32 pb-12 bg-gradient-summer overflow-hidden">
         <div className="container-custom text-center relative z-10">
-          <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
+          <p className="text-white/90 font-semibold uppercase tracking-widest text-sm mb-4">
             Pricing
           </p>
-          <h1 className="heading-xl text-white mb-6">
-            Simple <span className="text-gradient-gold">Pricing</span>
+          <h1 className="heading-xl text-white mb-6 text-shadow-lg">
+            Simple <span className="text-white font-black underline decoration-white/40 underline-offset-4">Pricing</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
             One transparent rate in Canadian Dollars. No hidden fees. Everything you need to ride included.
@@ -84,13 +84,13 @@ export default function PricingPage() {
 
       <PricingSection />
 
-      <section className="section-padding bg-gradient-dark">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="heading-lg text-white mb-4">
+            <h2 className="heading-lg text-sky-900 mb-4">
               What&apos;s <span className="text-gradient-gold">Included</span>
             </h2>
-            <p className="text-white/70 text-lg max-w-2xl mx-auto">
+            <p className="text-sky-600 text-lg max-w-2xl mx-auto">
               Every rental comes with everything you need to hit the water safely and confidently.
             </p>
           </div>
@@ -99,28 +99,28 @@ export default function PricingPage() {
             {includedItems.map(({ Icon, label }) => (
               <div
                 key={label}
-                className="bg-black/60 border border-white/10 rounded-2xl p-6 text-center hover:border-brand-gold/60 transition-all"
+                className="bg-white border border-sky-100 shadow-md rounded-2xl p-6 text-center hover:border-brand-gold/40 hover:shadow-xl hover:shadow-brand-gold/10 transition-all"
               >
                 <Icon className="w-10 h-10 mx-auto mb-3 text-brand-gold" strokeWidth={1.8} />
-                <p className="text-white text-sm font-semibold">{label}</p>
+                <p className="text-sky-900 text-sm font-semibold">{label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-[#F0FAFF]">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto bg-black/60 border border-brand-gold/30 rounded-3xl p-8 lg:p-12">
-            <h2 className="heading-md text-white mb-6 text-center">
+          <div className="max-w-3xl mx-auto bg-white border border-brand-gold/30 rounded-3xl p-8 lg:p-12 shadow-lg">
+            <h2 className="heading-md text-sky-900 mb-6 text-center">
               Deposit & <span className="text-gradient-gold">Terms</span>
             </h2>
-            <ul className="space-y-4 text-white/80">
+            <ul className="space-y-4 text-sky-700">
               {terms.map(({ Icon, bold, rest }) => (
                 <li key={bold} className="flex gap-3">
                   <Icon className="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-white">{bold}</strong> {rest}
+                    <strong className="text-sky-900">{bold}</strong> {rest}
                   </span>
                 </li>
               ))}

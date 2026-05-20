@@ -33,7 +33,7 @@ const steps: Step[] = [
 
 export function HowItWorks() {
   return (
-    <section className="section-padding bg-brand-black">
+    <section className="section-padding bg-[#F0FAFF]">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -45,10 +45,10 @@ export function HowItWorks() {
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             How It Works
           </p>
-          <h2 className="heading-lg text-white mb-4">
+          <h2 className="heading-lg text-sky-900 mb-4">
             3 Steps to <span className="text-gradient-gold">Ride</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-sky-600 text-lg max-w-2xl mx-auto">
             From booking to riding — your jet ski adventure is just minutes away.
           </p>
         </motion.div>
@@ -76,11 +76,11 @@ export function HowItWorks() {
                 transition={{ type: 'spring', stiffness: 300 }}
                 className="inline-flex w-24 h-24 rounded-full bg-gradient-gold items-center justify-center mb-6 mx-auto shadow-xl shadow-brand-gold/30 relative z-10"
               >
-                <Icon className="w-10 h-10 text-black" strokeWidth={2} />
+                <Icon className="w-10 h-10 text-white" strokeWidth={2} />
               </motion.div>
               <span className="block text-5xl font-black text-gradient-gold mb-3">{num}</span>
-              <h3 className="text-xl font-bold uppercase text-white mb-3">{title}</h3>
-              <p className="text-white/70 leading-relaxed">{desc}</p>
+              <h3 className="text-xl font-bold uppercase text-sky-900 mb-3">{title}</h3>
+              <p className="text-sky-600 leading-relaxed">{desc}</p>
             </motion.div>
           ))}
         </div>

@@ -17,7 +17,7 @@ export default function ContactPage() {
     <>
       <ContactHero />
 
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-gradient-to-b from-white to-[#E0F7FA]">
         <div className="container-custom">
           <ContactCards />
 

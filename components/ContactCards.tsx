@@ -12,10 +12,9 @@ const cards = [
     secondary: siteConfig.phoneSecondary,
     cta: 'Tap to call',
     href: `tel:${siteConfig.phone}`,
-    accent: 'gold',
     primaryColor: 'text-brand-gold',
     iconBg: 'bg-gradient-gold',
-    iconColor: 'text-black',
+    iconColor: 'text-white',
     borderColor: 'border-brand-gold/30 hover:border-brand-gold',
   },
   {
@@ -38,10 +37,10 @@ const cards = [
     secondary: 'Response within 24h',
     cta: 'Tap to email',
     href: `mailto:${siteConfig.email}`,
-    primaryColor: 'text-white',
-    iconBg: 'bg-white/10 border border-white/20',
+    primaryColor: 'text-brand-blue',
+    iconBg: 'bg-gradient-ocean',
     iconColor: 'text-white',
-    borderColor: 'border-white/20 hover:border-brand-gold',
+    borderColor: 'border-brand-blue/30 hover:border-brand-blue',
   },
 ];
 
@@ -80,19 +79,19 @@ export function ContactCards() {
           {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           whileHover={{ y: -8, scale: 1.02 }}
           transition={{ duration: 0.3 }}
-          className={`bg-black/60 border ${borderColor} rounded-3xl p-8 text-center transition-colors`}
+          className={`bg-white border ${borderColor} rounded-3xl p-8 text-center transition-all shadow-md hover:shadow-xl`}
         >
           <motion.div
             whileHover={{ rotate: [0, -10, 10, 0] }}
             transition={{ duration: 0.5 }}
-            className={`w-16 h-16 rounded-2xl ${iconBg} flex items-center justify-center mx-auto mb-4`}
+            className={`w-16 h-16 rounded-2xl ${iconBg} flex items-center justify-center mx-auto mb-4 shadow-lg`}
           >
             <Icon className={`w-8 h-8 ${iconColor}`} strokeWidth={2.2} />
           </motion.div>
-          <h2 className="text-xl font-black uppercase text-white mb-2">{title}</h2>
+          <h2 className="text-xl font-black uppercase text-sky-900 mb-2">{title}</h2>
           <p className={`${primaryColor} text-lg font-semibold mb-1`}>{primary}</p>
-          <p className="text-white/60 text-sm">{secondary}</p>
-          <p className="mt-4 text-xs text-white/50 uppercase tracking-wider">{cta}</p>
+          <p className="text-sky-500 text-sm">{secondary}</p>
+          <p className="mt-4 text-xs text-sky-400 uppercase tracking-wider">{cta}</p>
         </motion.a>
       ))}
     </motion.div>

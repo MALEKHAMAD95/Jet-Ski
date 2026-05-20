@@ -21,7 +21,8 @@
       "Bash(findstr :3005)",
       "PowerShell(Stop-Process -Id 62456 -Force)",
       "Bash(npx next *)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3005/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3005/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5034/)"
     ]
   }
 }

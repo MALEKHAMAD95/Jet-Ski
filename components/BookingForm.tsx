@@ -50,7 +50,7 @@ export function BookingForm() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
-        className="bg-gradient-gold rounded-3xl p-10 text-center text-black"
+        className="bg-gradient-gold rounded-3xl p-10 text-center text-white shadow-xl shadow-brand-gold/30"
       >
         <CheckCircle2 className="w-16 h-16 mx-auto mb-4" />
         <h3 className="text-2xl font-black uppercase mb-3">Booking Sent!</h3>
@@ -63,7 +63,7 @@ export function BookingForm() {
             setSubmitted(false);
             setSelectedDate(null);
           }}
-          className="px-6 py-3 bg-black text-brand-gold font-bold uppercase rounded-full hover:bg-gray-900 transition-colors"
+          className="px-6 py-3 bg-white text-brand-gold-dark font-bold uppercase rounded-full hover:bg-sky-50 transition-colors shadow-md"
         >
           Send Another
         </button>
@@ -78,11 +78,11 @@ export function BookingForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6 }}
-      className="bg-black/60 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-5"
+      className="bg-white border border-sky-100 rounded-3xl p-6 sm:p-8 space-y-5 shadow-lg"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="name" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+          <label htmlFor="name" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
             Your Name *
           </label>
           <input
@@ -90,13 +90,13 @@ export function BookingForm() {
             id="name"
             name="name"
             required
-            className="w-full bg-black/60 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all"
+            className="w-full bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 text-sky-900 placeholder-sky-400 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all"
             placeholder="John Smith"
           />
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+          <label htmlFor="phone" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
             Phone Number *
           </label>
           <input
@@ -104,7 +104,7 @@ export function BookingForm() {
             id="phone"
             name="phone"
             required
-            className="w-full bg-black/60 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all"
+            className="w-full bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 text-sky-900 placeholder-sky-400 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all"
             placeholder="+1 (416) 000-0000"
           />
         </div>
@@ -112,7 +112,7 @@ export function BookingForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="location" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+          <label htmlFor="location" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
             Location *
           </label>
           <select
@@ -120,7 +120,7 @@ export function BookingForm() {
             name="location"
             required
             defaultValue=""
-            className="w-full bg-black/60 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all"
+            className="w-full bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 text-sky-900 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all"
           >
             <option value="" disabled>Choose location</option>
             <option value="Toronto">Toronto</option>
@@ -130,7 +130,7 @@ export function BookingForm() {
         </div>
 
         <div>
-          <label htmlFor="duration" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+          <label htmlFor="duration" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
             Duration *
           </label>
           <select
@@ -138,7 +138,7 @@ export function BookingForm() {
             name="duration"
             required
             defaultValue=""
-            className="w-full bg-black/60 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all"
+            className="w-full bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 text-sky-900 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all"
           >
             <option value="" disabled>Choose duration</option>
             <option value={`30 minutes - ${formatCAD(siteConfig.pricing.halfHour)} CAD`}>30 minutes - {formatCAD(siteConfig.pricing.halfHour)} CAD</option>
@@ -150,7 +150,7 @@ export function BookingForm() {
       </div>
 
       <div>
-        <label htmlFor="date" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+        <label htmlFor="date" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
           Preferred Date *
         </label>
         <div className="relative">
@@ -164,7 +164,7 @@ export function BookingForm() {
             dateFormat="EEEE, MMMM d, yyyy"
             required
             wrapperClassName="w-full"
-            className="w-full bg-black/60 border border-white/20 rounded-xl pl-12 pr-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all cursor-pointer"
+            className="w-full bg-sky-50 border border-sky-100 rounded-xl pl-12 pr-4 py-3 text-sky-900 placeholder-sky-400 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all cursor-pointer"
             calendarClassName="gta-datepicker"
             popperPlacement="bottom-start"
           />
@@ -173,14 +173,14 @@ export function BookingForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-white mb-2 uppercase tracking-wider">
+        <label htmlFor="message" className="block text-sm font-semibold text-sky-700 mb-2 uppercase tracking-wider">
           Additional Notes
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
-          className="w-full bg-black/60 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/30 transition-all resize-none"
+          className="w-full bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 text-sky-900 placeholder-sky-400 focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20 transition-all resize-none"
           placeholder="Number of people, special requests, questions..."
         />
       </div>
@@ -189,7 +189,7 @@ export function BookingForm() {
         <MessageCircle className="w-5 h-5" /> Send Booking via WhatsApp
       </button>
 
-      <p className="text-xs text-white/50 text-center">
+      <p className="text-xs text-sky-400 text-center">
         By submitting, you&apos;ll be redirected to WhatsApp to complete your booking with our team.
       </p>
     </motion.form>

@@ -27,7 +27,7 @@ const items = [
 
 export function ContactInfoStrip() {
   return (
-    <section className="py-12 bg-gradient-dark">
+    <section className="py-12 bg-[#F0FAFF]">
       <div className="container-custom">
         <motion.div
           initial="hidden"
@@ -56,8 +56,8 @@ export function ContactInfoStrip() {
                 <Icon className="w-6 h-6 text-brand-gold mb-2" />
               </motion.div>
               <p className="text-brand-gold uppercase text-xs tracking-widest mb-2">{label}</p>
-              <p className="text-white font-semibold">{line1}</p>
-              <p className="text-white/60 text-sm">{line2}</p>
+              <p className="text-sky-900 font-semibold">{line1}</p>
+              <p className="text-sky-500 text-sm">{line2}</p>
             </motion.div>
           ))}
         </motion.div>

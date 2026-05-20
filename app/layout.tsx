@@ -24,7 +24,7 @@ const bebas = Bebas_Neue({
 });
 
 export const viewport: Viewport = {
-  themeColor: '#0A0A0A',
+  themeColor: '#F0F9FF',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -208,7 +208,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className="bg-brand-black text-white cursor-none">
+      <body className="bg-[#F0F9FF] text-sky-900 cursor-none">
         <Loader />
         <SmoothScroll />
         <CustomCursor />

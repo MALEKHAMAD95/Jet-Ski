@@ -16,7 +16,7 @@ export function FAQItem({ question, answer }: FAQItemProps) {
     <motion.div
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.2 }}
-      className="bg-black/60 border border-white/10 rounded-2xl overflow-hidden hover:border-brand-gold/40 transition-colors"
+      className="bg-white border border-sky-100 rounded-2xl overflow-hidden hover:border-brand-gold/40 hover:shadow-md hover:shadow-brand-gold/10 transition-all"
     >
       <button
         type="button"
@@ -24,7 +24,7 @@ export function FAQItem({ question, answer }: FAQItemProps) {
         className="w-full text-left p-6 flex items-center justify-between gap-4"
         aria-expanded={open ? 'true' : 'false'}
       >
-        <h3 className="text-base sm:text-lg font-bold text-white">{question}</h3>
+        <h3 className="text-base sm:text-lg font-bold text-sky-900">{question}</h3>
         <motion.div
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.3 }}
@@ -42,7 +42,7 @@ export function FAQItem({ question, answer }: FAQItemProps) {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <p className="px-6 pb-6 text-white/80 leading-relaxed">{answer}</p>
+            <p className="px-6 pb-6 text-sky-600 leading-relaxed">{answer}</p>
           </motion.div>
         )}
       </AnimatePresence>

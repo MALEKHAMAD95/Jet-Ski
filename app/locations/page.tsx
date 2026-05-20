@@ -40,7 +40,7 @@ const locations = [
   {
     name: 'Scarborough',
     area: 'Bluffers Park / Scarborough Bluffs',
-    desc: 'Ride along Toronto’s most iconic natural landmark — the Scarborough Bluffs. Towering cliffs and crystal-blue waters make this location an absolute must for thrill seekers and adventure photographers.',
+    desc: "Ride along Toronto's most iconic natural landmark — the Scarborough Bluffs. Towering cliffs and crystal-blue waters make this location an absolute must for thrill seekers and adventure photographers.",
     highlights: [
       'Iconic Bluffs cliffs views',
       'Adventure routes',
@@ -54,13 +54,13 @@ const locations = [
 export default function LocationsPage() {
   return (
     <>
-      <section className="relative pt-32 pb-12 bg-gradient-ocean overflow-hidden">
+      <section className="relative pt-32 pb-12 bg-gradient-summer overflow-hidden">
         <div className="container-custom text-center relative z-10">
-          <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
+          <p className="text-white/90 font-semibold uppercase tracking-widest text-sm mb-4">
             Our Locations
           </p>
-          <h1 className="heading-xl text-white mb-6">
-            Three GTA <span className="text-gradient-gold">Launch Points</span>
+          <h1 className="heading-xl text-white mb-6 text-shadow-lg">
+            Three GTA <span className="text-white font-black underline decoration-white/40 underline-offset-4">Launch Points</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
             Whether you&apos;re in the heart of Toronto, west in Mississauga, or east in Scarborough — we&apos;ve got a launch point near you.
@@ -70,17 +70,16 @@ export default function LocationsPage() {
 
       <LocationsSection />
 
-      {/* Custom black & gold map */}
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-[#F0FAFF]">
         <div className="container-custom">
           <div className="text-center mb-12">
             <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-3">
               Find Us
             </p>
-            <h2 className="heading-lg text-white mb-4">
+            <h2 className="heading-lg text-sky-900 mb-4">
               Our <span className="text-gradient-gold">Launch Points</span>
             </h2>
-            <p className="text-white/70 max-w-xl mx-auto">
+            <p className="text-sky-600 max-w-xl mx-auto">
               Click any marker to see details and book at that location.
             </p>
           </div>
@@ -88,7 +87,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-brand-black">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="space-y-16">
             {locations.map((loc, i) => (
@@ -100,25 +99,25 @@ export default function LocationsPage() {
                   <p className="inline-flex items-center gap-2 text-brand-gold font-semibold uppercase tracking-widest text-sm mb-3">
                     <MapPin className="w-4 h-4" /> {loc.area}
                   </p>
-                  <h2 className="heading-md text-white mb-4">
+                  <h2 className="heading-md text-sky-900 mb-4">
                     Jet Ski Rental in <span className="text-gradient-gold">{loc.name}</span>
                   </h2>
-                  <p className="text-white/80 leading-relaxed mb-6 text-lg">{loc.desc}</p>
+                  <p className="text-sky-700 leading-relaxed mb-6 text-lg">{loc.desc}</p>
 
                   <ul className="space-y-2 mb-6">
                     {loc.highlights.map((h) => (
-                      <li key={h} className="flex items-start gap-2 text-white/90">
+                      <li key={h} className="flex items-start gap-2 text-sky-800">
                         <Check className="w-4 h-4 mt-1 text-brand-gold flex-shrink-0" strokeWidth={3} /> {h}
                       </li>
                     ))}
                   </ul>
 
-                  <p className="text-sm text-white/60 italic mb-6">{loc.nearby}</p>
+                  <p className="text-sm text-sky-500 italic mb-6">{loc.nearby}</p>
 
                   <div className="flex gap-3">
                     <a
                       href={`tel:${siteConfig.phone}`}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-gold text-black font-bold text-sm uppercase rounded-full hover:scale-105 transition-transform"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-gold text-white font-bold text-sm uppercase rounded-full hover:scale-105 transition-transform shadow-md hover:shadow-brand-gold/30"
                     >
                       <Phone className="w-4 h-4" /> Book in {loc.name}
                     </a>
@@ -129,8 +128,8 @@ export default function LocationsPage() {
                   <div className="absolute inset-0 bg-gradient-ocean opacity-90" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <MapPin className="w-20 h-20 text-brand-gold mx-auto mb-4" strokeWidth={1.5} />
-                      <p className="text-4xl font-black text-brand-gold uppercase">{loc.name}</p>
+                      <MapPin className="w-20 h-20 text-white mx-auto mb-4" strokeWidth={1.5} />
+                      <p className="text-4xl font-black text-white uppercase">{loc.name}</p>
                       <p className="text-white/80 mt-2">{loc.area}</p>
                     </div>
                   </div>

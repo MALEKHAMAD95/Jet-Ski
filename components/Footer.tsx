@@ -23,8 +23,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black border-t border-white/10 pt-16 pb-8">
-      <div className="container-custom">
+    <footer className="relative bg-gradient-to-b from-[#E0F7FA] to-[#B3E5FC] border-t border-sky-200 pt-16 pb-8 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-gold" />
+
+      <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <Link href="/" className="inline-block mb-4" aria-label="Spark Jet Ski home">
@@ -36,32 +38,32 @@ export function Footer() {
                 className="h-16 w-auto"
               />
             </Link>
-            <p className="text-sm text-white/70 leading-relaxed">
+            <p className="text-sm text-sky-800 leading-relaxed">
               Premium Sea-Doo jet ski rentals across the GTA. Feel the water, live the thrill.
             </p>
           </div>
 
           <div>
-            <h3 className="text-brand-gold font-bold uppercase text-sm tracking-wider mb-4">
+            <h3 className="text-brand-gold-dark font-bold uppercase text-sm tracking-wider mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-white/70 hover:text-brand-gold text-sm">Home</Link></li>
-              <li><Link href="/pricing" className="text-white/70 hover:text-brand-gold text-sm">Pricing</Link></li>
-              <li><Link href="/locations" className="text-white/70 hover:text-brand-gold text-sm">Locations</Link></li>
-              <li><Link href="/about" className="text-white/70 hover:text-brand-gold text-sm">About Us</Link></li>
-              <li><Link href="/faq" className="text-white/70 hover:text-brand-gold text-sm">FAQ</Link></li>
-              <li><Link href="/contact" className="text-white/70 hover:text-brand-gold text-sm">Book Now</Link></li>
+              <li><Link href="/" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">Home</Link></li>
+              <li><Link href="/pricing" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">Pricing</Link></li>
+              <li><Link href="/locations" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">Locations</Link></li>
+              <li><Link href="/about" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">About Us</Link></li>
+              <li><Link href="/faq" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">FAQ</Link></li>
+              <li><Link href="/contact" className="text-sky-800 hover:text-brand-gold text-sm transition-colors">Book Now</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-brand-gold font-bold uppercase text-sm tracking-wider mb-4">
+            <h3 className="text-brand-gold-dark font-bold uppercase text-sm tracking-wider mb-4">
               Service Areas
             </h3>
             <ul className="space-y-2">
               {siteConfig.serviceAreas.map((area) => (
-                <li key={area} className="flex items-center gap-2 text-white/70 text-sm">
+                <li key={area} className="flex items-center gap-2 text-sky-800 text-sm">
                   <MapPin className="w-3.5 h-3.5 text-brand-gold" /> {area}
                 </li>
               ))}
@@ -69,35 +71,35 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-brand-gold font-bold uppercase text-sm tracking-wider mb-4">
+            <h3 className="text-brand-gold-dark font-bold uppercase text-sm tracking-wider mb-4">
               Contact
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2 text-white hover:text-brand-gold text-sm font-semibold">
+                <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2 text-sky-900 hover:text-brand-gold text-sm font-semibold transition-colors">
                   <Phone className="w-4 h-4" /> {siteConfig.phone}
                 </a>
               </li>
               <li>
-                <a href={`tel:${siteConfig.phoneSecondary}`} className="flex items-center gap-2 text-white/70 hover:text-brand-gold text-sm">
+                <a href={`tel:${siteConfig.phoneSecondary}`} className="flex items-center gap-2 text-sky-800 hover:text-brand-gold text-sm transition-colors">
                   <Phone className="w-4 h-4" /> {siteConfig.phoneSecondary}
                 </a>
               </li>
               <li>
-                <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/70 hover:text-green-400 text-sm">
+                <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sky-800 hover:text-green-600 text-sm transition-colors">
                   <MessageCircle className="w-4 h-4" /> WhatsApp
                 </a>
               </li>
               <li>
-                <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-white/70 hover:text-brand-gold text-sm">
+                <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-sky-800 hover:text-brand-gold text-sm transition-colors">
                   <Mail className="w-4 h-4" /> {siteConfig.email}
                 </a>
               </li>
               <li className="pt-2 flex gap-3">
-                <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-gradient-gold hover:border-brand-gold hover:text-black transition-all">
+                <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full border border-sky-300 bg-white/60 flex items-center justify-center text-sky-700 hover:bg-gradient-gold hover:border-brand-gold hover:text-white transition-all shadow-sm">
                   <InstagramIcon className="w-4 h-4" />
                 </a>
-                <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-gradient-gold hover:border-brand-gold hover:text-black transition-all">
+                <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-full border border-sky-300 bg-white/60 flex items-center justify-center text-sky-700 hover:bg-gradient-gold hover:border-brand-gold hover:text-white transition-all shadow-sm">
                   <FacebookIcon className="w-4 h-4" />
                 </a>
               </li>
@@ -105,7 +107,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <div className="pt-8 border-t border-sky-300/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-sky-700">
           <p>© {currentYear} {siteConfig.name}. All rights reserved. Prices in CAD.</p>
           <p className="text-xs">Season: {siteConfig.hours.season} • Daily: {siteConfig.hours.daily}</p>
         </div>
