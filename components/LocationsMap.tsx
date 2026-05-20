@@ -34,15 +34,26 @@ export function LocationsMap() {
   const mapInstanceRef = useRef<unknown>(null);
 
   useEffect(() => {
-    if (!mapRef.current || mapInstanceRef.current) return;
+    if (!mapRef.current) return;
 
+    let cancelled = false;
     let cleanup = () => {};
 
     (async () => {
       const L = (await import('leaflet')).default;
       await import('leaflet/dist/leaflet.css');
 
-      const map = L.map(mapRef.current!, {
+      if (cancelled || !mapRef.current || mapInstanceRef.current) return;
+
+      const container = mapRef.current;
+      // Reset any prior leaflet attachment (StrictMode double-mount safety)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if ((container as any)._leaflet_id) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (container as any)._leaflet_id = null;
+      }
+
+      const map = L.map(container, {
         center: [43.65, -79.4],
         zoom: 10,
         zoomControl: false,
@@ -194,7 +205,10 @@ export function LocationsMap() {
       };
     })();
 
-    return () => cleanup();
+    return () => {
+      cancelled = true;
+      cleanup();
+    };
   }, []);
 
   return (

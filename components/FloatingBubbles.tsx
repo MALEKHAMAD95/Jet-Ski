@@ -1,7 +1,16 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+
+interface Bubble {
+  id: number;
+  left: number;
+  size: number;
+  duration: number;
+  delay: number;
+  opacity: number;
+}
 
 interface FloatingBubblesProps {
   count?: number;
@@ -9,8 +18,10 @@ interface FloatingBubblesProps {
 }
 
 export function FloatingBubbles({ count = 12, className = '' }: FloatingBubblesProps) {
-  const bubbles = useMemo(
-    () =>
+  const [bubbles, setBubbles] = useState<Bubble[]>([]);
+
+  useEffect(() => {
+    setBubbles(
       Array.from({ length: count }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -18,9 +29,11 @@ export function FloatingBubbles({ count = 12, className = '' }: FloatingBubblesP
         duration: 6 + Math.random() * 10,
         delay: Math.random() * 5,
         opacity: 0.25 + Math.random() * 0.4,
-      })),
-    [count]
-  );
+      }))
+    );
+  }, [count]);
+
+  if (bubbles.length === 0) return null;
 
   return (
     <div
