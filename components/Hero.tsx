@@ -51,7 +51,7 @@ export function Hero() {
             initial={{ backgroundPosition: '0% 50%' }}
             animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
-            className="text-gradient-gold text-shadow-gold inline-block"
+            className="bg-gradient-to-r from-cyan-300 via-sky-200 to-cyan-300 bg-clip-text text-transparent text-shadow-gold inline-block"
             style={{ backgroundSize: '200% auto' }}
           >
             Live The Thrill
@@ -71,7 +71,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.9 }}
-          className="text-base sm:text-lg text-brand-gold font-semibold mb-10 uppercase tracking-wider"
+          className="text-base sm:text-lg text-cyan-200 font-semibold mb-10 uppercase tracking-wider text-shadow-lg"
         >
           ✓ No License Needed &nbsp; ✓ No Experience Required &nbsp; ✓ Full Safety Gear
         </motion.p>
@@ -118,7 +118,7 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl px-3 sm:px-6 py-4 hover:border-white/60 hover:bg-white/20 transition-all"
             >
-              <p className="text-2xl sm:text-4xl font-black text-gradient-gold mb-1">{stat.val}</p>
+              <p className="text-2xl sm:text-4xl font-black text-white mb-1 text-shadow-lg">{stat.val}</p>
               <p className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider">{stat.lbl}</p>
             </motion.div>
           ))}
