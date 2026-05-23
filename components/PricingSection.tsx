@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Check, Star, CreditCard } from 'lucide-react';
 import { siteConfig } from '@/app/lib/config';
@@ -75,6 +76,19 @@ export function PricingSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
+          <motion.div
+            animate={{ rotate: [-1.5, 1.5, -1.5] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="flex justify-center mb-6"
+          >
+            <Image
+              src="/images/ylaahabeylogo.png"
+              alt="Yalla Habibi"
+              width={619}
+              height={403}
+              className="w-40 sm:w-48 md:w-56 h-auto drop-shadow-xl"
+            />
+          </motion.div>
           <p className="text-brand-gold font-semibold uppercase tracking-widest text-sm mb-4">
             Transparent Pricing
           </p>

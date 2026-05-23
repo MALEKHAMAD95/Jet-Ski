@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Spark Jet Ski Rentals',
   legalName: 'Spark Jet Ski Rentals',
-  url: 'https://gtajetski.ca',
+  url: 'https://sparkski.com',
   description:
     'Premium Jet Ski rentals in Toronto, Mississauga & Scarborough. $130/hr | No license needed | Sea-Doo Jet Skis | Same-day booking available.',
   keywords: [
@@ -23,7 +23,7 @@ export const siteConfig = {
   phone: '+1-416-420-8228',
   phoneSecondary: '+1-416-877-5017',
   whatsapp: '+14168775017',
-  email: 'info@gtajetski.ca',
+  email: 'jetskitoronto111@gmail.com',
   address: {
     street: '41 Northumberland St',
     city: 'Toronto',
@@ -52,7 +52,7 @@ export const siteConfig = {
     season: 'May - October',
     daily: '9:00 AM - 8:00 PM',
   },
-  ogImage: '/og-image.jpg',
+  ogImage: '/images/logo%20with%20description.png',
 } as const;
 
 export type SiteConfig = typeof siteConfig;

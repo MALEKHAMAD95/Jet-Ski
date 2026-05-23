@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Rocket, Phone, MessageCircle } from 'lucide-react';
 import { siteConfig } from '@/app/lib/config';
@@ -24,6 +25,19 @@ export function CTASection() {
         transition={{ duration: 0.8 }}
         className="container-custom relative z-10 text-center"
       >
+        <motion.div
+          animate={{ rotate: [-2, 2, -2], y: [0, -5, 0] }}
+          transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex justify-center mb-6"
+        >
+          <Image
+            src="/images/ylaahabeylogo.png"
+            alt="Yalla Habibi"
+            width={619}
+            height={403}
+            className="w-48 sm:w-60 md:w-72 h-auto drop-shadow-2xl"
+          />
+        </motion.div>
         <p className="text-white/90 font-semibold uppercase tracking-widest text-sm mb-4">
           Ready to Ride?
         </p>

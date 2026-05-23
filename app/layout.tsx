@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
+        width: 813,
+        height: 536,
         alt: 'Spark Jet Ski Rentals - Toronto, Mississauga, Scarborough',
       },
     ],

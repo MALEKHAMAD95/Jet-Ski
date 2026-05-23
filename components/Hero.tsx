@@ -123,6 +123,28 @@ export function Hero() {
             </motion.div>
           ))}
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 0.9, delay: 1.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-10 flex justify-center"
+        >
+          <motion.div
+            animate={{ rotate: [-2, 2, -2], y: [0, -4, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-brand-gold/30 blur-2xl rounded-full" />
+            <Image
+              src="/images/ylaahabeylogo.png"
+              alt="Yalla Habibi - 2026 Jet Ski Rentals"
+              width={619}
+              height={403}
+              className="relative w-40 sm:w-52 md:w-60 h-auto drop-shadow-2xl"
+            />
+          </motion.div>
+        </motion.div>
       </div>
 
       <motion.div

@@ -2,6 +2,7 @@
 const nextConfig = {
    reactStrictMode: true,
   output: 'export',
+  allowedDevOrigins: ['192.168.0.102', '192.168.0.0/24', 'localhost'],
 images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],

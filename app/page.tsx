@@ -3,6 +3,7 @@ import { Hero } from '@/components/Hero';
 import { SpecsSection } from '@/components/SpecsSection';
 import { Features } from '@/components/Features';
 import { PricingSection } from '@/components/PricingSection';
+import { SpecialOffer } from '@/components/SpecialOffer';
 import { LocationsSection } from '@/components/LocationsSection';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Gallery } from '@/components/Gallery';
@@ -81,6 +82,7 @@ export default function HomePage() {
       <SpecsSection />
       <Features />
       <PricingSection />
+      <SpecialOffer />
       <LocationsSection />
       <HowItWorks />
       <Gallery />
