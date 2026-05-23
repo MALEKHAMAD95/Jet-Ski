@@ -29,11 +29,6 @@ const images = [
     alt: 'Premium jet skis fleet - Spark Jet Ski Rentals',
     span: '',
   },
-  {
-    src: '/images/logo with description.png',
-    alt: 'Spark Jet Ski Rentals - Official Logo Toronto',
-    span: '',
-  },
 ];
 
 export function Gallery() {
